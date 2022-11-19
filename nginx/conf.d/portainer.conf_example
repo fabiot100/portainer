@@ -2,8 +2,8 @@ server{
         #add in server_name the Portainer VM IP or the hostname (if you sue certificate)
         server_name Portainer_VM_IP_or_hostname;
         listen 9000;
-#        ssl_certificate path/of/certificate/certificate.crt;
-#        ssl_certificate_key path/of/certificate/certificate.pem;
+#        ssl_certificate /etc/nginx/portainer_certificate/certificate.crt;
+#        ssl_certificate_key /etc/nginx/portainer_certificate/certificate.pem;
         ssl_protocols TLSv1.2 TLSv1.3;
         ssl_prefer_server_ciphers on;
         ssl_ciphers ALL:!RSA:!CAMELLIA:!aNULL:!eNULL:!LOW:!3DES:!MD5:!EXP:!PSK:!SRP:!DSS:!RC4:!SHA1:!SHA256:!SHA384;
